@@ -15,9 +15,9 @@ Inspired by the organically evolved cities of the global south where intersectio
 
 ## Deisgn
 
-We introduce a common protocol that Autonomous Vehicles Manufactorors implement against a common interface. Implementations are rigosurly tested in extensive simulations by the National Highway Traffic Safety Administration (NHTSA) before being approved for general use.
+We introduce an interface that Autonomous Vehicles Manufactorors implement against. Implementations are rigosurly tested in extensive simulations by the National Highway Traffic Safety Administration (NHTSA) before being approved for general use. It's important to note that existing traffic signals override and supercede AV agentic behavior and respected by AVs to support top-down coordination.
 
-The interface is based on a distrbuted version of the Apache Mesos. Agents both make offers ("I'll go first and you go second") and submit bids in response ("ok you go"), then choose from the offers received. Such a  model facilitates decentralized coordiantion.
+The interface is based on a distrbuted version of the Apache Mesos. Agents both make offers ("I'll go first and you go second") and submit bids in response ("ok you go"), then choose from the offers received. Such a model facilitates decentralized coordination at scale. Once an offer is accepted, electromagnetic fields are used to communicate ongoing decisions at the speed of light. Near range collisions are avoided using these fields, addressing challenges with the "many body problem".
 
 ```
 public interface NegotiationAgent {
@@ -35,7 +35,7 @@ public interface NegotiationAgent {
 
 ### Features
 1. Fusion Platooning -  two or more AVs temporarily merge into a single coordinated unit to become a "bus" acting as one agent. These AVs synchronize breaking and accleration only maintaining a few inches of space from bumper to bumper. Taking up less space, more cars can pass through an intersection in a given time window improving overall throughput.
-2. Destination Optimization - AVs traveling in the same direction can share their final route and decide whether to change route based on online traffic predictions
+2. Destination Optimization - AVs traveling in the same direction can share their final route and decide whether to change route based on online traffic predictions to minimize strain on the traffic grid and optimize route times en masse.
 3. 
 
 
